@@ -1,0 +1,16 @@
+{
+  "name": "cypress-testing-project",
+  "description": "automated software testing with cypress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "automation"
+  ],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "cypress": "^11.0.1",
+    "prettier": "^2.7.1"
+  }
+}
