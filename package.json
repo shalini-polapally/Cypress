@@ -3,7 +3,10 @@
   "description": "automated software testing with cypress",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "cy:open":"cypress open",
+    "cy:run":"cypress run"
+  },
   "keywords": [
     "automation"
   ],
