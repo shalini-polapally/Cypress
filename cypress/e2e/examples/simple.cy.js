@@ -13,3 +13,16 @@ describe('Another describe block', () => {
         expect(false).to.equal(false)
     })
 })
+
+
+describe('Browser Actions', () => {
+    it('should load correct URL', () => {
+        cy.visit('https://example.cypress.io', { timeout: 4000 })
+    })
+    it('should chck if correct url is loading', () => {
+        cy.url().should('include', 'example')
+    })
+    it('should check for correct elements in the page', () => {
+        cy.get('h1').should('be.visible')
+    })
+})
