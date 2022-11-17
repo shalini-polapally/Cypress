@@ -1,9 +1,10 @@
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  projectId: '2tr27m',
   e2e: {
     // implement node event listeners here
-    baseUrl: "",
+    baseUrl: 'http://zero.webappsecurity.com/login.html',
     watchForFileChanges: false,
     viewportWidth: 1000,
     viewportHeight: 660,
