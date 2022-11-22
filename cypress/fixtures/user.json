@@ -1,4 +1,6 @@
 {
     "id":"username",
-    "pwd":"password"
+    "pwd":"password",
+    "username":"username",
+    "password":"password"
 }
