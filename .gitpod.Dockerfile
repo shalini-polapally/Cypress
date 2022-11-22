@@ -22,13 +22,13 @@ RUN sudo apt-get install -y \
     libappindicator3-1 \
     xdg-utils
 ENV CHROME_VERSION 81.0.4044.113
-RUN sudo wget -O /usr/src/google-chrome-stable_current_amd64.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
+RUN sudo wget -O /usr/src/google-chrome-stable_current_amd64.deb https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 RUN sudo dpkg -i /usr/src/google-chrome-stable_current_amd64.deb
 RUN sudo apt-get install -f -y && \
     sudo rm -f /usr/src/google-chrome-stable_current_amd64.deb
 RUN google-chrome --version
 RUN sudo apt-get install mplayer -y
-ARG FIREFOX_VERSION=75.0
+ARG FIREFOX_VERSION=86.0
 RUN sudo wget --no-verbose -O /tmp/firefox.tar.bz2 https://download-installer.cdn.mozilla.net/pub/firefox/releases/$FIREFOX_VERSION/linux-x86_64/en-US/firefox-$FIREFOX_VERSION.tar.bz2
 RUN sudo tar -C /opt -xjf /tmp/firefox.tar.bz2 \
     && sudo rm /tmp/firefox.tar.bz2 \

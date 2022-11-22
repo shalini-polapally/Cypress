@@ -1,4 +1,3 @@
-const { before } = require("mocha")
 
 class BasePage {
     static loadHomePage() {
