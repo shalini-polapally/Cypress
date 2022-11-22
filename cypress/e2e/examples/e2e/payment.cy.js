@@ -1,4 +1,4 @@
-describe('New-payee test', () => {
+describe('Payment test', () => {
     before(function () {
         cy.visit('http://zero.webappsecurity.com/index.html')
         cy.url().should('include', 'index.html')

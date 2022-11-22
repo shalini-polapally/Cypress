@@ -1,4 +1,4 @@
-describe('New-payee test', () => {
+describe('Purchase test', () => {
     before(function () {
         cy.visit('http://zero.webappsecurity.com/index.html')
         cy.url().should('include', 'index.html')
@@ -10,7 +10,7 @@ describe('New-payee test', () => {
         })
     })
 
-    it('Should add payment', () => {
+    it('Should add purchase', () => {
         //TODO
         cy.contains('Pay Bills').click()
         cy.contains('Purchase Foreign Currency').click()
